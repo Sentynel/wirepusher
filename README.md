@@ -24,15 +24,22 @@ wp.send("Test title", "Test message.")
 ```python
 import wirepusher
 
-# initialise with an encryption key configured on the device
+# initialise with an encryption key configured on the device
 wp = wirepusher.Wirepusher(MY_DEVICE_ID, "Test notifications", MY_PRE_SHARED_KEY)
 
-# send a notification which will go to a URL when clicked and store the ID
-mid = wp.send("Test title", "Test message.", action="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+# send a notification which will go to a URL when clicked and store the ID
+mid = wp.send(
+    "Test title", "Test message.", action="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+)
 
-# replace existing notification with one with an image
-wp.send("Test title", "Test message.", mid=mid, image="https://wirepusher.com/assets/images/logo.png")
+# replace existing notification with one with an image
+wp.send(
+    "Test title",
+    "Test message.",
+    mid=mid,
+    image="https://wirepusher.com/assets/images/logo.png",
+)
 
-# clear notification
+# clear notification
 wp.clear(mid)
 ```
