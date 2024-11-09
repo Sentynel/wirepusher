@@ -1,0 +1,6 @@
+.*.swp
+*.pyc
+env/
+wheels/
+build/
+*.egg-info/
