@@ -1,4 +1,4 @@
-# Wirepusher
+# Wirepusher
 
 Wirepusher is an Android push notification app, which allows sending arbitrary
 push notifications (abstracting away all the fuss of Google's push
@@ -9,7 +9,7 @@ notification in different ways. See the Wirepusher docs
 This is an unofficial Python library for Wirepusher. It supports all features
 of upstream Wirepusher (encrypted messages, images, actions, etc).
 
-## Basic usage
+## Basic usage
 
 ```python
 import wirepusher
