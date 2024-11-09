@@ -1,2 +1,2 @@
 #! /bin/sh
-python3 -m pip wheel . -w wheels/
+python3 -m build
